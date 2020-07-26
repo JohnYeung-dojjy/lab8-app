@@ -3,19 +3,19 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
-constructor(props) {
-super(props);
-this.state = { apitext: '' };
-}
+  constructor(props) {
+    super(props);
+    this.state = { apitext: '' };
+  }
 componentDidMount() {
 fetch("https://qly8axnqja.execute-api.us-east-1.amazonaws.com/default/hello-world")
 .then(res => res.json())
 .then(
-(result) => {
-this.setState({
-apitext: result.text
-});
-});
+  (result) => {
+      this.setState({
+        apitext: result.text
+      });
+  });
 }
   render(){
     return (
@@ -23,7 +23,7 @@ apitext: result.text
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            <code>{this.state.apitext} </code>
+            {this.state.apitext}
           </p>
           <a
             className="App-link"
