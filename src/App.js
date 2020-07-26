@@ -23,7 +23,7 @@ fetch("https://qly8axnqja.execute-api.us-east-1.amazonaws.com/default/hello-worl
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            {this.state.apitext}
+            <code>{this.state.apitext}</code>
           </p>
           <a
             className="App-link"
