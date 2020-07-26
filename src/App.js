@@ -8,7 +8,7 @@ super(props);
 this.state = { apitext: '' };
 }
 componentDidMount() {
-fetch(" Your API endpoint URL ")
+fetch("https://qly8axnqja.execute-api.us-east-1.amazonaws.com/default/hello-world")
 .then(res => res.json())
 .then(
 (result) => {
