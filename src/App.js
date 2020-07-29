@@ -8,7 +8,7 @@ class App extends React.Component {
     this.state = { apitext: '' };
   }
 componentDidMount() {
-fetch("https://qly8axnqja.execute-api.us-east-1.amazonaws.com/default/hello-world")
+fetch("https://qly8axnqja.execute-api.us-east-1.amazonaws.com/default/hello-world/")
 .then(res => res.json())
 .then(
   (result) => {
