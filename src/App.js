@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
-  constructor(props) {
+  /*constructor(props) {
     super(props);
     this.state = { apitext: '' };
   }
@@ -16,7 +16,7 @@ fetch("https://qly8axnqja.execute-api.us-east-1.amazonaws.com/default/hello-worl
         apitext: result.text
       });
   });
-}
+}*/
   render(){
     return (
       <div className="App">
