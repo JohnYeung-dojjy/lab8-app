@@ -17,13 +17,14 @@ fetch("https://qly8axnqja.execute-api.us-east-1.amazonaws.com/default/hello-worl
       });
   });
 }*/
+/*{this.state.apitext}*/
   render(){
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            <code>/*{this.state.apitext}*/</code>
+            <code></code>
           </p>
           <a
             className="App-link"
